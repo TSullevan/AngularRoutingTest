@@ -1,0 +1,18 @@
+<h5>Auth</h5>
+
+<div class="row">
+    <div class="input-field col s12">
+        <input [(ngModel)]="user.name" id="usuario" type="text" class="validate">
+        <label class="active" for="usuario">Usuario</label>
+    </div>
+</div>
+<div class="row">
+    <div class="input-field col s12">
+        <input [(ngModel)]="user.password" id="senha" type="password" class="validate">
+        <label class="active" for="senha">Senha</label>
+    </div>
+</div>
+
+<button type="submit" name="action" (click)="doAuth()">
+    Auth
+</button>
